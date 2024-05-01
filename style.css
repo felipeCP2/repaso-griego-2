@@ -1,0 +1,476 @@
+/*SETEOS GENERALES________________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*________________________________________________________________________________________________*/
+@media (max-width: 50000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+    background-color: rgb(20, 20, 94);
+    background-image: url(./index-img/532577.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      background-size: 200%;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+  /*contenedor general--------------------------------------------------------------------------------------*/
+  .contenedor-general {
+    width: 85%;
+    height: 90vh;
+    margin: 7rem auto 5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(250, 247, 247);
+    overflow: scroll;
+  }
+
+  @media (min-width: 1300px) {
+    .contenedor-general {
+      width: 110rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contenedor-general {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  .contenedor-general::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .contenedor-general::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 146, 146);
+    border-radius: 40px;
+  }
+
+  .contenedor-general::-webkit-scrollbar-corner {
+    background-color: rgba(127, 255, 212, 0);
+  }
+  /*Links en general--------------------------------------------------------------------------------------*/
+  a:link {
+    text-decoration: none;
+  }
+}
+
+/*Navegador________________________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*________________________________________________________________________________________________*/
+
+@media (max-width: 50000px) {
+  nav {
+    background-color: rgba(28, 54, 54, 0.719);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    color: aliceblue;
+  }
+
+  nav a:link {
+    color: aliceblue;
+  }
+  a:visited {
+    color: aliceblue;
+  }
+}
+
+/*Main____________________________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*_________________________________________________________________________________________________*/
+
+@media (max-width: 50000px) {
+  h1 {
+    padding-top: 3.6rem;
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    background-color: rgba(245, 245, 220, 0);
+    text-align: center;
+  }
+}
+/*Sección-musica___________________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*_________________________________________________________________________________________________*/
+@media (max-width: 50000px) {
+  .contenedor-musica-griega {
+    width: 82%;
+    margin: 0 auto 0 auto;
+    color: black;
+    background-color: rgba(96, 165, 165, 0);
+    overflow: scroll;
+  }
+
+  @media (max-width: 600px) {
+    .contenedor-musica-griega {
+      width: 100%;
+    }
+  }
+
+  .contenedor-musica-griega a {
+    color: black;
+  }
+  .contenedor-musica-griega::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contenedor-musica-griega::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 146, 146);
+    border-radius: 40px;
+  }
+
+  .contenedor-musica-griega::-webkit-scrollbar-corner {
+    background-color: rgba(127, 255, 212, 0);
+  }
+
+  .subcontenedor-musica-griega {
+    width: fit-content;
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+  }
+
+  /*Items y subdivisiones --------------------------------------------------------------------*/
+  .item-link-musica {
+    display: block;
+    height: 19rem;
+    width: 19rem;
+    padding: 1rem;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.712);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .item-link-musica {
+      width: 15rem;
+    }
+  }
+
+  .subdivision-item-musica:nth-child(1) {
+    background-color: blue;
+  }
+  .texto-items {
+    height: 30%;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+  }
+  .texto-items li:nth-child(1) {
+    font-weight: 600;
+  }
+  .texto-items li:nth-child(2) {
+  }
+  /*Item N°1 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(1) a {
+    background-image: url(./index-img/brhka-to-kleidí.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /*Item N°2 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(2) a {
+    background-image: url(./index-img/kanís-edw-den-tragoudá.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /*Item N°3 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(3) a {
+    background-image: url(./index-img/ta-ladadika.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /*Item N°4 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(4) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  /*Item N°5 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(5) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°6 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(6) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°7 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(7) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°8 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(8) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°9 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(9) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°10 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(10) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°11 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(11) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°12 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(12) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°13 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(13) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°14 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(14) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°15 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(15) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°16 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(16) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°17 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(17) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°18 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(18) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°19 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(19) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  /*Item N°20 --------------------------------------------------------------------*/
+  .subcontenedor-musica-griega li:nth-child(20) a {
+    background-image: url(./index-img/foto-vacio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+}
+
+/*Sección-Vocabulario___________________________________________________________________________________*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*_________________________________________________________________________________________________*/
+@media (max-width: 50000px) {
+  .contenedor-vocabulario-griego {
+    width: 99%;
+    padding: 1rem;
+    margin: 0 auto 0 auto;
+    color: black;
+    background-color: rgba(96, 165, 165, 0);
+    overflow: scroll;
+    background-color: rgba(0, 255, 255, 0);
+  }
+
+  .contenedor-vocabulario-griego a {
+    color: black;
+    background-color: rgba(0, 255, 64, 0);
+  }
+  .contenedor-vocabulario-griego::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contenedor-vocabulario-griego::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 146, 146);
+    border-radius: 40px;
+  }
+
+  .contenedor-vocabulario-griego::-webkit-scrollbar-corner {
+    background-color: rgba(127, 255, 212, 0);
+  }
+
+  .subcontenedor-vocabulario-griego {
+    width: fit-content;
+    margin: 1rem auto 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+  }
+
+  @media (max-width: 850px) {
+    .subcontenedor-vocabulario-griego {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /*Items y subdivisiones --------------------------------------------------------------------*/
+  .item-link-vocabulario {
+    display: block;
+    height: 30rem;
+    width: 45rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.712);
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .item-link-vocabulario {
+      height: 50vw;
+      width: 80vw;
+    }
+  }
+  .subdivision-item-vocabulario:nth-child(1) {
+    background-color: blue;
+  }
+  .texto-items-vocabulario {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(44, 40, 40, 0.384);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+  }
+  .texto-items-vocabulario li:nth-child(1) {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .texto-items-vocabulario li:nth-child(2) {
+  }
+  /*Item N°1 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(1) a {
+    background-image: url(./index-img/universo.jpg);
+    background-size: 135%;
+    background-repeat: no-repeat;
+  }
+  /*Item N°2 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(2) a {
+    background-image: url(./index-img/ciudad.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+  /*Item N°3 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(3) a {
+    background-image: url();
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°4 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(4) a {
+    background-image: url();
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°5 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(5) a {
+    background-image: url();
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  /*Item N°6 --------------------------------------------------------------------*/
+  .subcontenedor-vocabulario-griego li:nth-child(6) a {
+    background-image: url();
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+}
